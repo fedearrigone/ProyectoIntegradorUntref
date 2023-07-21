@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap');
+:root{
+    --color-1: #FC7300;
+    --color-2: #1F8A70;
+    --color-3: #00425A;
+    --color-4: #181823;
+    --color-5: #EFF5F5;
+    --color-text: #000000;
+    --font-primary: 'Roboto', sans-serif;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary)
+    
+    }
+
+.btn-verde{
+    text-decoration: none;
+    color: var(--color-5);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--color-2);
+    padding: 1rem 2rem;
+    display: inline-block;
+    align-self: center; 
+}
+.frase{
+    text-align: center;
+    color: var(--color-4);
+}
+#primera-seccion{
+    background: linear-gradient(rgba(68,13,13,0.35));
+    background: url(/img/fondo1.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    color: var(--color-5);
+}
+
+#barra-navegacion {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;
+    padding: 0 0 0 55px;
+}
+
+#menu-hamburguesa {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+#enlaces-nav {
+    display: flex;
+}
+
+#enlaces-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    display: block;
+}
+
+
+#enlaces-nav a:hover {
+    color: #1F8A70;
+    text-shadow: 0px 0px 23px rgba(255,255,255,1);
+   
+}
+
+@media screen and (max-width: 768px) {
+    #enlaces-nav {
+        flex-direction: column;
+        align-items: center;
+        display: none; 
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+    
+    #enlaces-nav a {
+        margin: 10px 0;
+    }
+    
+    #menu-hamburguesa {
+        display: block;
+    }
+}
+
+
+#primera-seccion-contenido{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 4px 0px 4px rgba(0,0,0,0.4);
+}
+#primera-seccion-contenido>p{
+    text-transform: capitalize;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#primera-seccion-contenido>h1{
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+/*Segunda Seccion*/
+#segunda-seccion{
+    background-color: var(--color-5);
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+#tercera-seccion{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+#titulo{
+    margin-bottom: 2rem;
+}
+#titulo > h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+#titulo > hr {
+    width: 4.5rem;
+    border-color: var(--color-1);
+}
+#container-tercera-seccion{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+.img-tercera{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.img-tercera > h6 {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+.img-tercera > p{
+    margin-bottom: 2rem;
+}
+.img-tercera>img{
+    max-width: 100%;
+}
+
+#cuarta-seccion {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.905));
+    background: url(/img/fondo2.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 55vh;
+    color: var(--color-5);
+    display: flex;
+    flex-direction: column;
+    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+#contenedor {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.mitad {
+    width: 50%;
+}
+
+#cuarta-seccion-der > h3 {
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#cuarta-seccion-der > hr {
+    width: 4.5rem;
+    border-color: var(--color-2);
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+#cuarta-seccion-der > p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #contenedor {
+        flex-direction: column;
+    }
+
+    .mitad {
+        width: 100%;
+    }
+
+    #cuarta-seccion-der > h3 {
+        font-size: 2rem;
+    }
+}
+
+
+#quinta-seccion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+#quinta-seccion-izquierda {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 2rem;
+}
+
+#quinta-seccion-izquierda > h3 {
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#quinta-seccion-izquierda > p {
+    margin-bottom: 2rem;
+}
+
+#quinta-seccion-derecha {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#quinta-seccion-derecha > img {
+    flex: 1 0 calc(50% - 7.5px); /* Dos imágenes por fila con espacio entre ellas */
+    max-width: calc(50% - 7.5px); /* Limitar el tamaño de las imágenes */
+    height: auto;
+}
+
+/* Estilos para pantallas medianas y pequeñas */
+@media screen and (max-width: 1200px) {
+    #quinta-seccion-derecha > img {
+        flex: 1 0 calc(50% - 7.5px); /* Dos imágenes por fila con espacio entre ellas */
+        max-width: calc(50% - 7.5px); /* Limitar el tamaño de las imágenes */
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #quinta-seccion {
+        flex-direction: column;
+    }
+
+    #quinta-seccion-izquierda {
+        flex: 1 0 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #quinta-seccion-derecha {
+        flex: 1 0 100%;
+        justify-content: center;
+    }
+
+    #quinta-seccion-derecha > img {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+/* Estilos generales para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Ajustar el tamaño de fuente de los enlaces */
+    transition: color 0.3s; /* Agregar una transición de color al pasar el mouse sobre los enlaces */
+}
+
+.footer-links a:hover {
+    color: #fc3700; /* Cambiar el color del enlace al pasar el mouse sobre él */
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-map {
+    flex: 1 0 100%;
+    margin-top: 20px;
+}
+
+/* Estilos para el mapa de Google */
+#mapIframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Estilos para pantallas medianas y pequeñas */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-links, .footer-contact {
+        text-align: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query para pantallas de hasta 576px */
+@media screen and (max-width: 576px) {
+    /* Ajustar estilos para pantallas más pequeñas */
+
+    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
+    #primera-seccion-contenido > h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Ajustar el tamaño de fuente para los párrafos */
+    #primera-seccion-contenido > p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query para pantallas de hasta 480px */
+@media screen and (max-width: 480px) {
+    /* Ajustar estilos para pantallas más pequeñas */
+
+    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
+    #primera-seccion-contenido > h1 {
+        font-size: 2rem;
+    }
+
+    /* Ajustar el tamaño de fuente para los párrafos */
+    #primera-seccion-contenido > p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query para pantallas de hasta 320px */
+@media screen and (max-width: 320px) {
+    /* Ajustar estilos para pantallas más pequeñas */
+
+    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
+    #primera-seccion-contenido > h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Ajustar el tamaño de fuente para los párrafos */
+    #primera-seccion-contenido > p {
+        font-size: 0.8rem;
+    }
+}
+/* Estilos generales para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Asegura que los elementos posicionados dentro del modal estén relativos a este contenedor */
+}
+
+.close {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de cierre */
+.close-btn {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.close-btn:hover {
+    background-color: #ccc;
+}
+
+/* Estilos para el botón */
+.btn-verde {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #1F8A70;
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #1F8A70;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #1F8A70;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #19745C;
+}
+
+/* Estilos para el mensaje de éxito o error */
+.message {
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: none;
+}
+
+.success {
+    background-color: #1F8A70;
+}
+
+.error {
+    background-color: #FF5252;
+}

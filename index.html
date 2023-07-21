@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Untref School</title>
+</head>
+<body>
+    <!--Primera seccion-->
+    <div id="primera-seccion">
+        <div id="barra-navegacion">
+            <p id="logo">Colegio <span style="color: #fc3700;">Untref</span></p>
+            <div id="menu-hamburguesa" onclick="toggleMenu()">&#9776;</div>
+            <nav id="enlaces-nav">
+                <a href="#">Quienes somos</a>
+                <a href="#">Por que elegirnos?</a>
+                <a href="#">Propuesta educativa</a>
+                <a href="#">Ultimas noticias</a>
+            </nav>
+        </div>
+        <div id="primera-seccion-contenido">
+            <p>Educacion de Calidad</p>
+            <h1>Educacion en Valores y Desarrollo Web</h1>
+            <button class="btn-verde" onclick="openModal()">Contactanos</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Ingresa tus datos</h2>
+                        <form onsubmit="return validateForm()">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" required>
+
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" required>
+
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>  
+                <script src="/js/script.js"></script>  
+        </div>
+    </div>
+        <!--Segunda seccion-->
+    <div id="segunda-seccion">
+            <p class="frase">Un colegio secundario vibrante y acogedor que inspira el aprendizaje y el liderazgo. Nuestro enfoque en el desarrollo integral de cada estudiante promueve la creatividad, el pensamiento crítico y la inclusión. Con un currículo diverso y apoyo emocional, cultivamos el potencial de nuestros jóvenes para enfrentar con confianza los desafíos del futuro."</p>
+            <p class="frase">"Forjando Futuros Brillantes: Educar, Inspirar, Triunfar.</p>
+    </div>
+        <!--Tercera seccion-->
+    <div id="tercera-seccion">
+        <div id="titulo">
+            <h2>Eventos Destacados</h2>
+        </div>
+        <div id="container-tercera-seccion">
+            <div class="img-tercera">
+                <img src="/img/nathan-dumlao-ewGMqs2tmJI-unsplash (1).jpg" alt="">
+                <h6>Vanguardia en instalaciones educativas</h6>
+                <p>Un espacio moderno y acogedor, donde el aprendizaje cobra vida. Descubre nuestras impresionantes instalaciones educativas.</p>
+                <a href="#" class="btn-verde">Mas informacion</a>
+            </div>
+                <div class="img-tercera">
+                    <img src="/img/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
+                    <h6>Unidos en el Conocimiento</h6>
+                    <p>Unidos por el conocimiento, crecemos juntos hacia un futuro brillante. ¡Nuestra pasión por enseñar nos impulsa!</p>
+                    <a href="#" class="btn-verde">Mas informacion</a>
+                </div>
+            </div>
+        </div>
+    
+        <!--Cuarta seccion-->
+    <div id="cuarta-seccion">
+        <div id="contenedor">
+            <div id="carta-seccion-izq" class="mitad"></div>
+            <div id="cuarta-seccion-der" class="mitad">
+                <h3>El mejor colegrio de Argentina</h3>
+                <hr>
+                <p>En nuestro colegio, la excelencia educativa es nuestro estandarte. Con un enfoque innovador, inspiramos a cada estudiante a alcanzar su máximo potencial. Nuestro compromiso es formar líderes responsables y ciudadanos globales, preparados para triunfar en un mundo en constante cambio.</p>
+                <a href="#" class="btn-verde">Mas informacion</a>
+            </div>
+        </div>
+    </div>
+        <!--Quinta seccion-->
+    <div id="quinta-seccion">
+        <div id="quinta-seccion-izquierda">
+            <h3>Egresados</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo ipsum sit dolorem nihil hic qui incidunt aut ducimus delectus. Necessitatibus quia minima ullam laboriosam animi impedit suscipit consequuntur doloremque!</p>
+            <a href="#" class="btn-verde">Mas informacion</a>
+        </div>
+        <div id="quinta-seccion-derecha">
+                <img src="/img/robert-bye-CyvK_Z2pYXg-unsplash.jpg" alt="">
+                <img src="/img/pang-yuhao-_kd5cxwZOK4-unsplash.jpg" alt="">
+                <img src="/img/kimberly-farmer-lUaaKCUANVI-unsplash.jpg" alt="">
+                <img src="/img/priscilla-du-preez-ggeZ9oyI-PE-unsplash (1).jpg" alt="">
+        </div>
+    </div>
+    <!--footer-->
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <p id="logo">Colegio <span style="color: #fc3700;">Untref</span></p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Por qué elegirnos</a></li>
+                    <li><a href="#">Propuesta educativa</a></li>
+                    <li><a href="#">Últimas noticias</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Contáctanos:</p>
+                <p>Email: info@untrefschool.com</p>
+                <p>Teléfono: +123456789</p>
+            </div>
+            <div class="footer-map">
+                <iframe id="mapIframe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
