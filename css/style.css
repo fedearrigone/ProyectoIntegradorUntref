@@ -32,7 +32,9 @@
     color: var(--color-4);
 }
 #primera-seccion{
-    background: url(/img/fondo1.jpg)no-repeat center/cover;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover; /* Ajusta el tamaño para cubrir completamente la sección */
+    background-position: center;
     background-attachment: fixed;
     height: 70vh;
     color: var(--color-5);
@@ -43,7 +45,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 
 #logo {
@@ -186,7 +188,7 @@
 
 #cuarta-seccion {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.905));
-    background: url(/img/fondo2.jpg) no-repeat center/cover;
+    background: url(../img/fondo2.jpg) no-repeat center/cover;
     background-attachment: fixed;
     height: 55vh;
     color: var(--color-5);
