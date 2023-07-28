@@ -282,16 +282,16 @@
 }
 
 #quinta-seccion-derecha > img {
-    flex: 1 0 calc(50% - 7.5px); /* Dos imágenes por fila con espacio entre ellas */
-    max-width: calc(50% - 7.5px); /* Limitar el tamaño de las imágenes */
+    flex: 1 0 calc(50% - 7.5px); 
+    max-width: calc(50% - 7.5px);
     height: auto;
 }
 
 /* Estilos para pantallas medianas y pequeñas */
 @media screen and (max-width: 1200px) {
     #quinta-seccion-derecha > img {
-        flex: 1 0 calc(50% - 7.5px); /* Dos imágenes por fila con espacio entre ellas */
-        max-width: calc(50% - 7.5px); /* Limitar el tamaño de las imágenes */
+        flex: 1 0 calc(50% - 7.5px); 
+        max-width: calc(50% - 7.5px); 
     }
 }
 
@@ -358,12 +358,12 @@ footer {
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem; /* Ajustar el tamaño de fuente de los enlaces */
-    transition: color 0.3s; /* Agregar una transición de color al pasar el mouse sobre los enlaces */
+    font-size: 1rem; 
+    transition: color 0.3s; 
 }
 
 .footer-links a:hover {
-    color: #fc3700; /* Cambiar el color del enlace al pasar el mouse sobre él */
+    color: #fc3700; 
 }
 
 .footer-contact {
@@ -407,14 +407,11 @@ footer {
 
 /* Media query para pantallas de hasta 576px */
 @media screen and (max-width: 576px) {
-    /* Ajustar estilos para pantallas más pequeñas */
 
-    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
     #primera-seccion-contenido > h1 {
         font-size: 2.5rem;
     }
 
-    /* Ajustar el tamaño de fuente para los párrafos */
     #primera-seccion-contenido > p {
         font-size: 1rem;
     }
@@ -422,14 +419,11 @@ footer {
 
 /* Media query para pantallas de hasta 480px */
 @media screen and (max-width: 480px) {
-    /* Ajustar estilos para pantallas más pequeñas */
-
-    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
+   
     #primera-seccion-contenido > h1 {
         font-size: 2rem;
     }
 
-    /* Ajustar el tamaño de fuente para los párrafos */
     #primera-seccion-contenido > p {
         font-size: 0.9rem;
     }
@@ -437,14 +431,11 @@ footer {
 
 /* Media query para pantallas de hasta 320px */
 @media screen and (max-width: 320px) {
-    /* Ajustar estilos para pantallas más pequeñas */
-
-    /* Por ejemplo, ajustar el tamaño de fuente para los títulos */
+    
     #primera-seccion-contenido > h1 {
         font-size: 1.8rem;
     }
 
-    /* Ajustar el tamaño de fuente para los párrafos */
     #primera-seccion-contenido > p {
         font-size: 0.8rem;
     }
